@@ -6,5 +6,10 @@ export class User {
 id: number;
 @Column()
 name: string;
+@Column()
 age: Number;
+@Column({nullable:true})
+email:string;
+@Column({nullable:true})
+address:string;
 }
